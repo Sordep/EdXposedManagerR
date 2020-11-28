@@ -83,7 +83,7 @@ public class App extends XposedApp implements Application.ActivityLifecycleCallb
     public static boolean supportScope() {
         try {
             String version = App.getXposedProp().getVersion();
-            return new Version(version.substring(6, 13)).compareTo(new Version("0.5.1.3")) >= 0;
+            return true;
         } catch (Exception e) {
             return false;
         }
